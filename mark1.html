@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mark1.css">
+    <title>login form</title>
+</head>
+<body>
+    <div class="container">
+      <div class="left">
+        <img src="images/left.jpg" alt="login photo" height="500px" width="300px">
+      </div>
+      <div class="right">
+        <h3>STUDENT REGISTRATION FORM</h3>
+        <div >
+        <input type="text" placeholder="First name" id="fname" class="small">
+        <input type="text" placeholder="Last name" class="small">
+        </div> <br>
+        <div>
+          <label for="date">Date Of Birth:</label>
+          <input type="text" placeholder="DD/MM/YYYY">
+        </div> <br>
+        <div>
+        <input type="text" placeholder="Address" class="bar">
+        </div> <br>
+        <div class="gender">
+        <label for="gender">Gender:</label>
+        <input type="radio" name=gender>Male
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Others
+        </div> <br>
+        <div>
+        <select name="State" id="State" class="small">
+          <option>state</option>
+          <option>Andhra Pradesh</option>
+          <option>Telgana</option>
+          <option>Tamilnadu</option>
+          <option>kerala</option>
+          <option>xxxxxxxxxxxxxxxxxxxxxx</option>
+        </select>
+        
+        <select name="City" id="City" class="small">
+          <option>City</option>
+          <option>Amalapuram</option>
+          <option>hyderabad</option>
+          <option>chennai</option>
+          <option>Vizag</option>
+          <option>xxxxxxxxxxxxxxxxxxxxxx</option>
+        </select>
+        </div> <br>
+          <div>
+        <input type="text" placeholder="pincode" class="bar"> <br>
+        </div> <br>
+        <div>
+        <input type="text" placeholder="Course"  class="bar"> <br>
+        </div> <br>
+        <div>
+        <input type="email" placeholder="Email ID" class="bar">
+        </div> <br>
+        <div>
+          <input type="file" placeholder="Upload profile">
+        </div>
+        <div class="buttons">
+          <button class="reset">RESET ALL</button>
+          <button class="button" onclick="result" >SUBMIT FORM</button>
+        </div>
+    </div>
+    </div>
+       <div class="details">
+      <P>First Name: </P>
+      <P>Last Name: </P>
+      <P>Date Of Birth:</P>
+      <P>Gender:</P>
+      <P>State:</P>
+      <P>City: </P>
+      <P>Pincode: </P>
+      <P>Course: </P>
+      <P>Email: </P>
+    </div>
+    <script type="text/javascript">
+      function result() {
+       alert("");
+       var firstname=document.getElementById("fname").value;
+       document.getElementById("fnameresullt").innerHTML =
+        "First Name = " + firstname;
+      }
+    
+
+    </script>
+</body>
+</html>
